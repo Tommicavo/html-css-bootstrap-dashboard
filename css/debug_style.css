@@ -1,6 +1,6 @@
-/* header, main, .sidebar, .jumbotron, .my_dashboard{
+header, main, .sidebar, .jumbotron, .my_dashboard{
     border: 1px solid black;
-} */
+}
 
 header{
     background-color: gray;
@@ -15,9 +15,9 @@ header{
     background-color: aqua;
 }
 
-/* .row > *{
+.row > *{
     border: 1px solid red;
-} */
+}
 
 .my_dashboard, .main_content{
     background-color: aquamarine;

@@ -1,11 +1,53 @@
-/* Root */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+/* Root */
+:root{
+    --h_header: 100px;
+}
 
 /* Generics */
+header{
+    height: var(--h_header);
+    
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
 
+/* Containers */
+.sidebar{
+    flex: 0 0 80px;
+}
+
+.main_container{
+    padding-top: var(--h_header);
+    height: 100vh;
+}
+
+.main_content{
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.my_dash{
+    flex: 0 0 100%;
+}
 
 /* Utils */
+.flex{
+    display: flex;
+}
 
+/* Jumbotron */
+.jumbo{
+    flex: 0 0 100%;
+}
 
 /* Colors */
 
@@ -15,4 +57,16 @@
 
 /* Buttons */
 
+/* Media Query */
+
+    /* phone */
+
+    /* tablet */
+
+    /* laptop */
+@media screen and (min-width: 992px){
+    .sidebar{
+        flex-basis: 300px;
+    }
+}
 

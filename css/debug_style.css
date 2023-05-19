@@ -1,0 +1,24 @@
+/* header, main, .sidebar, .jumbotron, .my_dashboard{
+    border: 1px solid black;
+} */
+
+header{
+    background-color: gray;
+}
+
+.sidebar{
+    background-color: blue;
+    color: white;
+}
+
+.jumbotron{
+    background-color: aqua;
+}
+
+/* .row > *{
+    border: 1px solid red;
+} */
+
+.my_dashboard, .main_content{
+    background-color: aquamarine;
+}

@@ -1,0 +1,26 @@
+.my_container{
+    height: 100px;
+    background-color: aquamarine;
+}
+
+.img_container{
+    width: 200px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    font-family: sans-serif, FontAwesome;
+}
+
+.my_container .container_fluid{
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.my_nav.right{
+    flex-grow: 1;
+}

@@ -25,7 +25,7 @@ header{
 
 .main_container{
     padding-top: var(--h_header);
-    height: 100vh;
+    height: calc(100vh);
 }
 
 .main_content{

@@ -17,10 +17,105 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
     <body>
-        <header>header</header>
+        <header>
+            <nav class="navbar w-100">
+                <div class="container-fluid gap-3">
+
+                    <div class="my_nav left">
+                        <div class="img_container d-block d-lg-none">
+                            <a class="navbar-brand" href="#">
+                                <img src="img/mobile-logo.png" alt="mobile_logo" class="mobile_logo">
+                            </a>
+                        </div>
+                        <div class="img_container d-none d-lg-block">
+                            <a class="navbar-brand" href="#">
+                                <img src="img/logo.svg" alt="logo" class="logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="my_nav center">
+                        <form class="d-flex" role="search">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="my_nav right d-flex">
+                        <div class="div_icons d-none d-lg-block">
+                            <nav>
+                                <ul class="d-flex ps-0">
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-list"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-question"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span><i class="fa-solid fa-bell"></i></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
         <main>
             <div class="main_container flex">
-                <div class="sidebar ">sidebar</div>
+                <div class="sidebar d-flex flex-column justify-content-between align-items-center py-2">
+                    <div class="sidebar_top">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="nav_item">
+                                            <span class="item_ico"><i class="fa-solid fa-house"></i></span>
+                                            <span class="item_desc d-none d-lg-inline">Home</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="nav_item">
+                                            <span class="item_ico"><i class="fa-solid fa-chart-simple"></i></span>
+                                            <span class="item_desc d-none d-lg-inline">Stats</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="nav_item">
+                                            <span class="item_ico"><i class="fa-solid fa-signal"></i></span>
+                                            <span class="item_desc d-none d-lg-inline">Signal</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="sidebar_bottom">
+                        <a href="#">
+                            <div class="nav_item">
+                                <span class="item_ico"><i class="fa-solid fa-gear"></i></span>
+                                <span class="item_desc d-none d-lg-inline">Admin</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
                 <div class="main_content">
                     <div class="jumbotron">
                         <div class="container-fluid">

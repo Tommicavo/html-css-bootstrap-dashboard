@@ -4,12 +4,19 @@
 
 /* Root */
 :root{
-    --h_header: 100px;
+    --h_header: 80px;
 }
 
 /* Generics */
+body{
+    font-family: sans-serif, FontAwesome;
+}
+
 header{
     height: var(--h_header);
+
+    display: flex;
+    align-items: center;
     
     position: fixed;
     left: 0;
@@ -18,9 +25,28 @@ header{
     z-index: 1;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 /* Containers */
 .sidebar{
-    flex: 0 0 80px;
+    flex: 0 0 50px;
+    color: white;
+    background-image: url(../img/sidebar-bg.png);
+    object-fit: cover;
+    background-color: #051E34;
 }
 
 .main_container{
@@ -40,6 +66,74 @@ header{
 /* Utils */
 .flex{
     display: flex;
+}
+
+/* Header */
+header .img_container{
+    width: 40px;
+}
+
+header .container_fluid{
+    align-items: center;
+}
+
+.my_nav.center{
+    flex-grow: 1;
+    margin-left: 0;
+    padding-right: 0;
+}
+
+.my_nav.right{
+    align-items: center;
+    gap: 5px;
+}
+
+header ::placeholder:hover{
+    background-color: white;
+    color: #5B5858;
+}
+
+header .form-control{
+    background-color: #E5E5E5;
+}
+
+header .form-control:focus{
+    color: #5B5858;
+    background-color:  white;
+    box-shadow: none;
+}
+
+header a{
+    color:#5B5858;
+}
+
+header ul{
+    margin-bottom: 0;
+}
+
+header li{
+    padding: 0 1rem;
+}
+
+header .btn{
+    color: goldenrod;
+}
+
+/* Sidebar */
+.sidebar a{
+    display: block;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.sidebar ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.item_desc{
+    padding: 0 10px;
 }
 
 /* Jumbotron */
@@ -64,7 +158,16 @@ header{
     /* laptop */
 @media screen and (min-width: 992px){
     .sidebar{
-        flex-basis: 300px;
+        flex-basis: 150px;
+    }
+
+    .my_nav.center{
+        margin-left: -50px;
+        padding-right: 1rem;
+    }
+
+    header .img_container{
+        width: 200px;
     }
 }
 

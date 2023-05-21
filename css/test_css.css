@@ -4,7 +4,7 @@
 }
 
 .img_container{
-    width: 200px;
+    width: 50px;
 }
 
 img{
@@ -17,10 +17,13 @@ body{
 }
 
 .my_container .container_fluid{
-    justify-content: flex-start;
     align-items: center;
 }
 
-.my_nav.right{
+.my_nav.center{
     flex-grow: 1;
 }
+
+/* .my_nav.right{
+    text-align: right;
+} */

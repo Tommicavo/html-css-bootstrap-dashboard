@@ -1,12 +1,10 @@
 
 
-.jumbotron{
-    background-color: aqua;
-}
 
-.row > *{
+
+/* .row > *{
     border: 1px solid red;
-}
+} */
 
 .my_dashboard, .main_content{
     background-color: aquamarine;

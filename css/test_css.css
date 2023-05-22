@@ -1,29 +1,7 @@
-.my_container{
-    height: 100px;
-    background-color: aquamarine;
-}
-
-.img_container{
-    width: 50px;
-}
-
-img{
-    max-width: 100%;
-    height: auto;
-}
 
 body{
-    font-family: sans-serif, FontAwesome;
+    background-color: blue;
 }
 
-.my_container .container_fluid{
-    align-items: center;
-}
 
-.my_nav.center{
-    flex-grow: 1;
-}
 
-/* .my_nav.right{
-    text-align: right;
-} */

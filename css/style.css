@@ -68,6 +68,15 @@ li{
     display: flex;
 }
 
+.my_dashboard .row>*{
+    padding-top: calc(var(--bs-gutter-x) * .5);
+    padding-bottom: calc(var(--bs-gutter-x) * .5);
+}
+
+.my_faq, .my_users{
+    padding-top: calc(var(--bs-gutter-x) * .5);
+}
+
 /* Header */
 header .img_container{
     width: 40px;
@@ -167,7 +176,36 @@ header .btn{
     font-size: 14px;
 }
 
+/* Prossime classi */
+.my_classes .img_container{
+    width: 30px;
+    display: inline-block;
+}
 
+.my_classes_btn{
+    color: #707880;
+    border: 1px solid #707880;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    font-size: 16px;
+}
+
+.my_classes a:hover{
+    color: #707880;
+}
+
+.my_classes th:first-child,
+.my_classes td:first-child{
+    text-align: left;
+}
+
+.my_classes th:nth-child(2),
+.my_classes td:nth-child(2),
+.my_classes th:nth-child(3),
+.my_classes td:nth-child(3){
+    display: none;
+}
 
 /* Colors */
 
@@ -182,6 +220,14 @@ header .btn{
     /* phone */
 
     /* tablet */
+@media screen and (min-width: 768px){
+    .my_classes th:nth-child(2),
+    .my_classes td:nth-child(2),
+    .my_classes th:nth-child(3),
+    .my_classes td:nth-child(3){
+        display: table-cell;
+    }
+}
 
     /* laptop */
 @media screen and (min-width: 992px){

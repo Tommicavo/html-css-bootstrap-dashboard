@@ -207,6 +207,26 @@ header .btn{
     display: none;
 }
 
+/* To_do */
+/* .my_todo .card-body,
+.my_todo .form-check{
+    border: 1px solid red;
+} */
+
+.my_todo .form-check{
+    margin-bottom: 0;
+    padding: 5px 10px;
+}
+
+.my_todo .form-check-input{
+    margin: 5px 10px;
+}
+
+.my_todo .my_form_border{
+    border: 1px solid var(--bs-border-color);
+    border-radius: 10px;
+}
+
 /* Colors */
 
 

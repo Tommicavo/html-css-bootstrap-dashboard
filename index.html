@@ -59,14 +59,14 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="dropdown">
+                        <div class="dropdown dropstart">
                             <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <span><i class="fa-solid fa-bell"></i></span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
                         </div>
                     </div>
@@ -368,11 +368,11 @@
                                                     <div class="accordion" id="accordionExample">
                                                         <div class="accordion-item">
                                                           <h2 class="accordion-header">
-                                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                                               Come si aggiunge un nuovo studente?
                                                             </button>
                                                           </h2>
-                                                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                                          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                                             <div class="accordion-body">
                                                                 Così si aggiunge un nuovo studente.
                                                             </div>
@@ -414,7 +414,7 @@
                                             <div class="card">
                                                 <h5 class="card-header fw-bold fs-3">Todo</h5>
                                                 <div class="card-body">
-                                                    <div class="my_form_border">
+                                                    <div class="my_border">
                                                         <div class="form-check border-bottom">
                                                             <input class="form-check-input" type="checkbox" value="" id="linked_1">
                                                             <label class="form-check-label" for="linked_1">
@@ -439,9 +439,18 @@
                                         </div>
                                         <div class="my_users">
                                             <div class="card">
-                                                <h5 class="card-header fw-bold fs-3">Utenti attivi</h5>
                                                 <div class="card-body">
-                                                    Utenti attivi body
+                                                    <div class="my_border">
+                                                        <div class="img_container"><img src="img/stats.jpeg" alt="stats"></div>
+                                                        <h5 class="ps-4 fs-2 fw-semibold">Utenti attivi</h5>
+                                                        <span class="ps-4 py-3">Lista degli utenti attivi in piattaforma nell'ultimo mese</span>
+                                                        <ul class="ps-0">
+                                                            <li class="border-top border-bottom ps-0"><span class="d-inline-block py-3 ps-4">Gennaio: 1200</span></li>
+                                                            <li class="border-bottom ps-0"><span class="d-inline-block py-3 ps-4">Febbraio: 800</span></li>
+                                                            <li class="border-bottom ps-0"><span class="d-inline-block py-3 ps-4">Marzo: 1500</span></li>
+                                                        </ul>
+                                                        <div class="ps-4 py-4"><a href="#" class="text-decoration-underline">Visualizza report approfondito</a></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>

@@ -154,6 +154,10 @@ header .btn{
     padding: 10px;
 }
 
+.sidebar a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 .sidebar ul{
     padding-left: 0;
     margin-bottom: 0;
